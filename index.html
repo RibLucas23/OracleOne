@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <link rel="shortcut icon" href="./img.png" type="image/x-icon">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Encriptador</title>
@@ -21,17 +21,17 @@
         </svg>
 
         <h1>- Desafio Encriptador -</h1>
+        <!-- CONTENEDOR TEXTO A ENCRIPTAR  -->
         <div>
-            <!-- <form method="post" class="form"> -->
             <div class="contenedorInput">
                 <textarea name="texto" id="texto" cols="30" rows="8"
                     placeholder="Escribe aquí el texto que quieras encriptar" class="cajaTexto"></textarea>
-                <!-- <input type="text" name="fname" id="texto"> -->
                 <button id="encriptarBtn">ENCRIPTAR</button>
             </div>
-            <!-- <input type="submit" value="Submit"> -->
-            <!-- </form> -->
+
         </div>
+
+        <!-- CONTENEDOR TEXTO ENCRIPTADO -->
         <div id="resultado" class="contenedorInput">
             <h3>Resultado Encriptado:</h3>
             <button class="copyIcon" onclick="copyEncriptado()">
@@ -42,6 +42,8 @@
             <textarea name="textoEncriptado" id="textoEncriptado" cols="30" rows="8" class="cajaTexto"></textarea>
             <button id="desencriptarBtn">DESENCRIPTAR</button>
         </div>
+
+        <!-- CONTENEDOR TEXTO DESENCRIPTADO -->
         <div class="contenedorInput">
             <h3>Resultado Desencriptado:</h3>
             <button id="copyIconDesencriptado" class="copyIcon" onclick="copyDesencriptado()">
@@ -52,7 +54,7 @@
                 class="cajaTexto"></textarea>
         </div>
     </main>
-
+    <!-- FOOTER  -->
     <footer class="footer">
         <p>Encriptador de texto - Alura Challenges ONE. </p>
         <p>Desarrollado por: Lucas Ribeiro da Silva.</p>
@@ -61,6 +63,8 @@
             Linkedin
         </a>
     </footer>
+
+    <!-- Scripts  -->
     <script src="./main.js">    </script>
 </body>
 

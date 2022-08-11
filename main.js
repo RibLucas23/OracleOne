@@ -9,7 +9,6 @@ var pat = /^[a-z]+$/;
 /////// Encriptar
 encriptarBtn.addEventListener("click", function (e) {
     e.preventDefault()
-    // resultadoTextoDesencriptado.innerHTML = ""
     let texto = document.getElementById("texto").value
     if (pat.test(texto) == false) {
         alert('Por favor ingrese solo letras minúsculas');
