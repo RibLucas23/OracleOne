@@ -54,18 +54,27 @@ desencriptarBtn.addEventListener("click", function (e) {
 function copyEncriptado() {
 
     var texto = document.getElementById('textoEncriptado');
+    if (texto.value == "") {
+        console.log("No hay nada para copiar")
+    }
+    else {
+        texto.select();
+        document.execCommand('copy');
 
-    texto.select();
-    document.execCommand('copy');
-
-    alert("Copied!");
+        alert("Mensaje copiado!");
+    }
 }
 
 function copyDesencriptado() {
 
     var texto = document.getElementById('resultadoTextoDesencriptado');
-    texto.select();
-    document.execCommand('copy');
+    if (texto.value == "") {
+        console.log("No hay nada para copiar")
+    }
+    else {
+        texto.select();
+        document.execCommand('copy');
 
-    alert("Copied!");
+        alert("Mensaje copiado!");
+    }
 }
